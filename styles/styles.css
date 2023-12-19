@@ -7,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&family=Yantramanav:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita&family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&family=Yantramanav:wght@100&display=swap");
-
 :root {
   --gradient-menu: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #11E680 0%, #04541F 70.31%, #04541F 83.85%, #04541F 100%);
   --gradient-card-type-one: radial-gradient(238.57% 135.53% at 90.03% 94.18%, #074439 0%, #16E173 100%);
@@ -924,6 +923,17 @@ body {
   color: #FFF;
 }
 
+.social_footer {
+  width: 75%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.social_footer .img_social {
+  width: 40px;
+  height: 40px;
+}
+
 @media (max-width: 1024px) {
   .logo {
     width: 20% !important;
@@ -1088,6 +1098,13 @@ body {
   }
   .span_footer {
     font-size: 8px !important;
+  }
+  .social_footer {
+    width: 80% !important;
+  }
+  .social_footer .img_social {
+    width: 30px !important;
+    height: 30px !important;
   }
 }
 @media (max-width: 864px) {
@@ -1319,22 +1336,32 @@ body {
     width: 90% !important;
     aspect-ratio: 1.8 !important;
   }
+  .sub_container_footer {
+    margin-left: 80px !important;
+  }
   .sub_container_footer_two {
     margin-top: -30px;
   }
   .sub_container_footer_two .title_footer {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
   .sub_container_footer_two .sub_title_footer {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .span_footer {
     font-size: 6px !important;
   }
+  .social_footer {
+    width: 80% !important;
+  }
+  .social_footer .img_social {
+    width: 25px !important;
+    height: 25px !important;
+  }
 }
 @media (max-width: 480px) {
   .logo {
-    width: 35% !important;
+    width: 105px !important;
   }
   .title {
     padding-top: 90px !important;
@@ -1636,15 +1663,23 @@ body {
     margin-left: 20px;
   }
   .sub_container_footer {
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 30px !important;
   }
   .sub_container_footer_two .title_footer {
-    font-size: 13px !important;
+    font-size: 10px !important;
   }
   .sub_container_footer_two .sub_title_footer {
-    font-size: 8px !important;
+    font-size: 7px !important;
   }
   .span_footer {
     font-size: 6px !important;
+  }
+  .social_footer {
+    width: 90% !important;
+    padding-top: 0px;
+  }
+  .social_footer .img_social {
+    width: 20px !important;
+    height: 20px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&family=Yantramanav:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita&family=Sintony:wght@700&family=Sriracha&family=Staatliches&family=Tajawal:wght@200&family=Tauri&family=Teko:wght@300&family=Work+Sans:wght@800&family=Yantramanav:wght@100&display=swap");
+
 :root {
   --gradient-menu: radial-gradient(280.86% 219.74% at 75.46% 228.3%, #11E680 0%, #04541F 70.31%, #04541F 83.85%, #04541F 100%);
   --gradient-card-type-one: radial-gradient(238.57% 135.53% at 90.03% 94.18%, #074439 0%, #16E173 100%);
@@ -108,12 +109,20 @@ body {
 }
 .section_two {
   overflow: hidden;
-  margin-top: 350px;
+  padding-top: 350px;
 }
 
 .content {
   display: flex;
   justify-content: center;
+}
+
+.title_presentation {
+  text-align: center;
+  font-size: 110px;
+  margin-bottom: 80px;
+  font-family: Staatliches;
+  color: #FFF;
 }
 
 .presentation {
@@ -123,12 +132,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.presentation .title_presentation {
-  text-align: center;
-  font-size: 110px;
-  margin-bottom: 80px;
-  font-family: Staatliches;
 }
 .presentation .text_presentation {
   width: 80%;
@@ -144,10 +147,11 @@ body {
 
 .container_menu {
   width: 100%;
+  color: #FFF;
 }
 .container_menu .title_container_menu {
-  padding: 200px 200px 100px 200px;
-  text-align: left;
+  padding-top: 150px;
+  text-align: center;
 }
 .container_menu .div_line {
   cursor: pointer;
@@ -225,11 +229,8 @@ body {
   overflow: hidden;
   transition: opacity 0.8s ease, width 0.8s ease, height 0.3s ease;
 }
-.menu .menu_img {
-  width: 40%;
-}
-.menu .menu_img .img_menu {
-  width: 100%;
+.menu .img_menu {
+  width: 80%;
 }
 .menu .menu_description {
   width: 60%;
@@ -321,6 +322,7 @@ body {
 }
 
 .container_triangle {
+  margin-top: 100px;
   position: relative;
 }
 .container_triangle .title_image {
@@ -847,9 +849,9 @@ body {
 .container_footer {
   width: 100%;
   aspect-ratio: 5.85;
-  max-width: 2200px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
   background-color: #0F263B;
 }
@@ -951,15 +953,19 @@ body {
       transform: translateX(-100%);
     }
   }
+  .section_two {
+    padding-top: 150px !important;
+  }
   .title {
     width: 100% !important;
   }
   .title_presentation {
+    margin: 0 !important;
+    padding: 0 !important;
     font-size: 95px !important;
   }
   .title_container_menu {
-    width: 80%;
-    padding-left: 120px !important;
+    text-align: center;
     margin-top: 40px !important;
     margin-bottom: 150px !important;
   }
@@ -1006,8 +1012,14 @@ body {
     font-size: 14px !important;
     padding: 30px !important;
   }
+  .section_three {
+    padding-bottom: 50px !important;
+  }
   .card {
     margin: 0px 0px 30px;
+  }
+  .title_image {
+    font-size: 95px !important;
   }
   .sub_title {
     right: 35px !important;
@@ -1052,7 +1064,7 @@ body {
   }
   .title_info {
     width: 82% !important;
-    font-size: 100px !important;
+    font-size: 95px !important;
   }
   .description_info {
     width: 90%;
@@ -1352,9 +1364,9 @@ body {
     }
   }
   .title_presentation {
+    padding: 0 !important;
     width: 90%;
     font-size: 50px !important;
-    margin-bottom: 55px !important;
   }
   .text_presentation {
     width: 80% !important;
@@ -1364,7 +1376,6 @@ body {
   .title_container_menu {
     width: 100%;
     font-size: 50px !important;
-    padding-left: 25px !important;
     padding-top: 80px !important;
   }
   .div_line {

@@ -148,12 +148,21 @@ body{
 
 .section_two{
     overflow: hidden;
-    margin-top: 350px;
+    padding-top: 350px;
 }
 
 .content{
     display: flex;
     justify-content: center;
+}
+
+.title_presentation{
+    text-align: center;
+    font-size: 110px;
+
+    margin-bottom: 80px; 
+    font-family: Staatliches; 
+    color: $color-white;   
 }
 
 // IL BRAND
@@ -167,13 +176,7 @@ body{
    flex-direction: column;
    align-items: center;
 
-    .title_presentation{
-        text-align: center;
-        font-size: 110px;
-
-        margin-bottom: 80px; 
-        font-family: Staatliches;    
-    }
+  
 
     .text_presentation{
         width: 80%;
@@ -194,10 +197,11 @@ body{
 
 .container_menu{
     width: 100%;
+    color: $color-white;
     
     .title_container_menu{
-        padding: 200px 200px 100px 200px; 
-        text-align: left;
+        padding-top: 150px;
+        text-align: center;
     }
     .div_line{
         cursor: pointer;
@@ -292,11 +296,8 @@ body{
     overflow: hidden;
     transition: opacity 0.8s ease, width 0.8s ease, height 0.3s ease;
     
-    .menu_img{
-        width: 40%;
-        .img_menu{
-            width: 100%;
-        }
+    .img_menu{
+        width: 80%;
     }
     
     .menu_description{
@@ -415,6 +416,7 @@ body{
 
 
 .container_triangle{
+    margin-top: 100px;
     position: relative;
     .title_image{
         width: 100%;
@@ -1056,9 +1058,9 @@ body{
 .container_footer{   
     width: 100%;
     aspect-ratio: 5.85;
-    max-width: 2200px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
 
     background-color: $bg-blue-night;
@@ -1184,17 +1186,23 @@ body{
     }
 
     // IL BRAND
+
+    .section_two{
+        padding-top: 150px !important;
+    }
+
     .title{
         width: 100% !important;
     }
 
     .title_presentation{
+        margin:0 !important;
+        padding: 0 !important;
         font-size: 95px !important;
     }
 
     .title_container_menu{
-        width: 80%;
-        padding-left: 120px !important;
+        text-align: center;
         margin-top: 40px !important;
         margin-bottom: 150px !important;
     }
@@ -1203,6 +1211,7 @@ body{
     }
 
     //PERCHE E IMPORTANTE PER I BAMBINI?
+
 
     .div_line{
         padding-bottom:120px !important;
@@ -1254,11 +1263,19 @@ body{
     }
 
     // CARD
+    .section_three{
+        padding-bottom: 50px !important;
+    }
+
     .card{
         margin: 0px 0px 30px;
     }
 
     // SHOWROOM
+
+    .title_image{
+        font-size: 95px!important;
+    }
 
     .sub_title{
         right: 35px !important;
@@ -1314,7 +1331,7 @@ body{
 
     .title_info{
         width: 82% !important;
-        font-size: 100px !important;
+        font-size: 95px !important;
     }
 
     .description_info{
@@ -1700,9 +1717,9 @@ body{
 
     // IL BRAND
     .title_presentation{
+        padding: 0 !important;
         width: 90%;
         font-size: 50px !important;
-        margin-bottom: 55px !important;
     }
     .text_presentation{
         width: 80% !important;
@@ -1713,7 +1730,6 @@ body{
     .title_container_menu{
         width: 100%;
         font-size: 50px !important;
-        padding-left: 25px !important;
         padding-top: 80px!important;
     }
     

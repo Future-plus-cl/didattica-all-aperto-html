@@ -39,11 +39,13 @@ body {
 }
 
 .section_one {
-  background-image: url(../images/jumbo.png);
+  background-image: url(../images/trees_jumbo.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
   color: #FFF;
+  margin-inline: -25px;
+  padding-bottom: 185px;
   overflow: hidden;
 }
 .section_one .container_one {
@@ -63,19 +65,30 @@ body {
   width: 80%;
   aspect-ratio: 3.4;
 }
-.section_one .container_one .sub_title_jumbo {
+.section_one .container_one .sub_container_jumbo {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  justify-content: end;
+}
+.section_one .container_one .sub_container_jumbo .sub_title_jumbo {
   width: 30%;
-  aspect-ratio: 3.8;
   text-align: right;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   font-size: 50px;
   align-self: self-end;
   font-family: Staatliches;
-  padding-top: 250px;
+}
+.section_one .container_one .sub_container_jumbo .img_child {
+  width: 530px;
+  transform: rotate(13deg);
 }
 .section_one .triangle_one {
-  width: 100%;
-  margin-bottom: -5px;
+  position: absolute;
+  width: 105%;
+  margin-bottom: 50px;
+  top: 1000px;
+  box-shadow: 0 32px 0 #04541F;
 }
 .section_one .brand {
   width: 180%;
@@ -277,6 +290,7 @@ body {
 .card {
   width: 400px;
   height: auto;
+  border-radius: 30px 30px 30px 30px;
   box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.25);
   margin: -30px 60px 60px 0px;
   padding: 35px 0px 0px 20px;
@@ -296,7 +310,6 @@ body {
 }
 
 .background_one {
-  border-radius: 30px 30px 0px 0px;
   background: var(--gradient-card-type-one);
 }
 
@@ -852,20 +865,43 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: #0F263B;
+  background-color: #011E0B;
 }
-
-.logo_footer {
+.container_footer .logo_footer {
   width: 12%;
   aspect-ratio: 1;
   margin-left: 50px;
 }
-
-.sub_container_footer {
+.container_footer .sub_container_footer {
   margin-left: 110px;
   height: 100%;
   display: flex;
   align-items: center;
+}
+.container_footer .sub_container_footer .sub_title_footer {
+  width: 100%;
+  height: 70%;
+  flex-shrink: 0;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 98.125%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.container_footer .sub_container_footer .sub_title_footer .privacy {
+  margin-bottom: 10px;
+}
+.container_footer .sub_container_footer .social_footer {
+  width: 75%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.container_footer .sub_container_footer .social_footer .img_social {
+  width: 40px;
+  height: 40px;
 }
 
 .sub_container_footer_two {
@@ -886,23 +922,6 @@ body {
   color: #FFF;
 }
 
-.sub_title_footer {
-  width: 100%;
-  height: 70%;
-  flex-shrink: 0;
-  font-family: Staatliches;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 98.125%;
-  text-transform: uppercase;
-  color: #7694AF;
-}
-
-.privacy {
-  margin-bottom: 10px;
-}
-
 .container_footer_two {
   width: 100%;
   aspect-ratio: 35.3;
@@ -912,8 +931,7 @@ body {
   justify-content: center;
   background-color: #02070B;
 }
-
-.span_footer {
+.container_footer_two .span_footer {
   font-family: Yantramanav;
   font-size: 12px;
   font-style: normal;
@@ -923,18 +941,10 @@ body {
   color: #FFF;
 }
 
-.social_footer {
-  width: 75%;
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.social_footer .img_social {
-  width: 40px;
-  height: 40px;
-}
-
 @media (max-width: 1024px) {
+  .container_one {
+    padding-bottom: 100px;
+  }
   .logo {
     width: 20% !important;
   }
@@ -947,13 +957,15 @@ body {
     padding-top: 110px !important;
     font-size: 35px !important;
   }
-  .triangle {
+  .triangle_one {
+    top: 1075px !important;
+    box-shadow: 0 80px 0 #04541F !important;
     margin-bottom: -10px !important;
   }
   .brand {
     font-size: 28px !important;
     width: 230% !important;
-    top: 1120px !important;
+    top: 1420px !important;
   }
   @keyframes moveText {
     0% {
@@ -964,7 +976,7 @@ body {
     }
   }
   .section_two {
-    padding-top: 150px !important;
+    padding-top: 100px !important;
   }
   .title {
     width: 100% !important;
@@ -1117,7 +1129,7 @@ body {
   }
   .brand {
     width: 295% !important;
-    top: 1000px !important;
+    top: 1420px !important;
     font-size: 22px;
   }
   .title_presentation {
@@ -1360,6 +1372,9 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .section_one {
+    padding-bottom: 50px !important;
+  }
   .logo {
     width: 105px !important;
   }
@@ -1367,15 +1382,25 @@ body {
     padding-top: 90px !important;
     width: 330px !important;
   }
-  .sub_title_jumbo {
-    width: 70% !important;
-    margin-right: -20px !important;
+  .sub_container_jumbo {
+    padding-top: 55px !important;
+  }
+  .sub_container_jumbo .sub_title_jumbo {
+    width: 38% !important;
+    margin-right: -5px !important;
     font-size: 20px !important;
+  }
+  .sub_container_jumbo .img_child {
+    width: 180px !important;
+  }
+  .triangle_one {
+    top: 510px !important;
+    margin-left: 10px !important;
   }
   .brand {
     font-size: 20px !important;
-    width: 450% !important;
-    top: 780px !important;
+    width: 480% !important;
+    top: 820px !important;
   }
   .brand_text {
     white-space: nowrap;
@@ -1401,9 +1426,11 @@ body {
     line-height: 28px !important;
   }
   .title_container_menu {
-    width: 100%;
+    margin: auto !important;
+    text-align: left !important;
+    width: 80%;
     font-size: 50px !important;
-    padding-top: 80px !important;
+    padding: 80px 0 80px 0 !important;
   }
   .div_line {
     padding-bottom: 50px !important;
@@ -1470,6 +1497,7 @@ body {
     font-size: 12px !important;
   }
   .card {
+    width: 320px !important;
     margin: 0px 0px 30px;
   }
   .title_card {
@@ -1511,7 +1539,7 @@ body {
   }
   .sub_title {
     right: 20px !important;
-    bottom: 5px !important;
+    bottom: -15px !important;
     font-size: 25px !important;
   }
   .eclipse {
@@ -1519,12 +1547,12 @@ body {
     height: 10px !important;
   }
   .eclipse1 {
-    top: 180px !important;
+    top: 200px !important;
     left: 50px !important;
   }
   .eclipse2 {
-    top: 180px !important;
-    left: 300px !important;
+    top: 250px !important;
+    left: 250px !important;
   }
   .sub_part_two {
     bottom: 5px !important;
@@ -1539,7 +1567,7 @@ body {
     left: 300px !important;
   }
   .five_sub_title {
-    bottom: 30px !important;
+    bottom: 10px !important;
   }
   .eclipse5 {
     top: 120px !important;

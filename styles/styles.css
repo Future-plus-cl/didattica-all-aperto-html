@@ -481,15 +481,13 @@ body {
   margin-top: 320px;
 }
 .info .title_info {
-  width: 65%;
   text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.35);
   font-family: Staatliches;
   font-size: 110px;
   padding-left: 34px;
   color: #FFF;
 }
-
-.description_info {
+.info .description_info {
   width: 80%;
   font-family: Tauri;
   font-size: 20px;
@@ -498,18 +496,28 @@ body {
   color: #FFF;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container_input {
-  width: 70%;
+  width: 100%;
   margin-top: 70px;
   position: relative;
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.input {
+  width: 320px;
+}
 .input .inputGroup {
   margin: 1em 0em 1em 0;
-  width: 80%;
+  width: 78%;
   position: relative;
 }
 .input .inputGroup input {
@@ -572,7 +580,7 @@ body {
 
 .accept_conditions {
   display: flex;
-  align-items: center;
+  justify-content: center;
   font-family: Tajawal;
   font-size: 20px;
   margin-top: 70px;
@@ -735,9 +743,13 @@ body {
 }
 
 .prefer_contact {
+  font-size: 20px;
+  font-family: Tauri;
   width: 60%;
   margin-top: 20px;
   margin-left: 20px;
+  color: #FFF;
+  display: flex;
 }
 
 .container_input_radio_two {
@@ -1391,7 +1403,7 @@ body {
     font-size: 20px !important;
   }
   .sub_container_jumbo .img_child {
-    width: 180px !important;
+    width: 200px !important;
   }
   .triangle_one {
     top: 510px !important;
@@ -1709,5 +1721,287 @@ body {
   .social_footer .img_social {
     width: 20px !important;
     height: 20px !important;
+  }
+}
+@media (max-width: 414px) {
+  .title {
+    padding-top: 90px !important;
+    width: 100% !important;
+  }
+  .container_one {
+    padding-bottom: 35px;
+  }
+  .sub_container_jumbo {
+    padding-top: 55px !important;
+  }
+  .sub_container_jumbo .sub_title_jumbo {
+    font-size: 15px !important;
+  }
+  .triangle_one {
+    position: absolute;
+    width: 105%;
+    margin-bottom: 0px !important;
+    box-shadow: 0 60px 0 #04541F !important;
+  }
+  .brand {
+    width: 485% !important;
+    top: 720px !important;
+    font-size: 22px;
+    letter-spacing: 12px !important;
+  }
+  .div_line {
+    padding-bottom: 70px !important;
+    margin-bottom: 30px !important;
+  }
+  .div_line .line {
+    border: 3px solid #FFF !important;
+  }
+  .div_line .rhombus {
+    width: 12px !important;
+    height: 12px !important;
+    margin-left: -5px;
+  }
+  .div_line .title_menu {
+    font-size: 15px !important;
+    margin-left: 5px !important;
+    padding-left: 20px !important;
+  }
+  .sub_div_line_0 .line {
+    width: 5%;
+  }
+  .sub_div_line_1 .line {
+    width: 10%;
+  }
+  .sub_div_line_2 .line {
+    width: 15%;
+  }
+  .sub_div_line_3 .line {
+    width: 20%;
+  }
+  .sub_div_line_4 .line {
+    width: 25%;
+  }
+  .div_line:hover .line {
+    width: 40%;
+  }
+  .div_line:hover .menu {
+    opacity: 1;
+    width: 100%;
+    height: 266px;
+  }
+  .div_line_two:hover {
+    transition: 0.6s;
+    padding-bottom: 0px !important;
+  }
+  .menu_img .img_menu {
+    width: 120px !important;
+  }
+  .menu_description {
+    width: 50% !important;
+    height: 100% !important;
+    padding: 30px !important;
+    display: flex;
+    align-items: center;
+  }
+  .menu_description .description_menu {
+    padding: 0 !important;
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  .card {
+    margin: 0px 0px 30px;
+    padding: 10px 0 0 10px;
+  }
+  .title_card {
+    font-size: 25px !important;
+  }
+  .highlight_number {
+    font-size: 80px !important;
+    line-height: 80px !important;
+  }
+  .img_trees {
+    width: 40px !important;
+  }
+  .description_card {
+    font-size: 12px !important;
+  }
+  .title_image {
+    font-size: 60px !important;
+    top: -100px !important;
+  }
+  .sub_title {
+    right: 15px !important;
+    bottom: -5px !important;
+    font-size: 12px !important;
+  }
+  .eclipse {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .eclipse1 {
+    top: 150px !important;
+    left: 50px !important;
+  }
+  .eclipse2 {
+    top: 170px !important;
+    left: 150px !important;
+  }
+  .eclipse3 {
+    top: 50px !important;
+    left: 60px !important;
+  }
+  .eclipse4 {
+    top: 30px !important;
+    left: 140px !important;
+  }
+  .five_sub_title {
+    bottom: 10px !important;
+  }
+  .eclipse5 {
+    top: 90px !important;
+    left: 180px !important;
+  }
+  .title_info {
+    width: 80%;
+    font-size: 60px !important;
+  }
+  .description_info {
+    width: 95%;
+    font-size: 15px !important;
+  }
+  .container_input {
+    margin-right: 10px;
+    width: 80%;
+    justify-content: center;
+  }
+  .send {
+    margin-left: 15px;
+  }
+  .title_contact {
+    font-size: 85px !important;
+  }
+  .container_contact {
+    margin-bottom: 300px !important;
+  }
+  .container_contact_one {
+    width: 90% !important;
+  }
+  .title_contact_one {
+    margin-top: 40px;
+    font-size: 20px !important;
+  }
+  .input_contact {
+    margin-right: 5px !important;
+  }
+  .input {
+    width: 220px;
+  }
+  .input .inputGroup input {
+    padding: 0.5em !important;
+  }
+  .inputGroup {
+    margin: 0.5em 0em 0.5em 0 !important;
+  }
+  label {
+    font-size: 12px !important;
+  }
+  .type_contact {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .container_input_radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_input_radio span {
+    align-self: start;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .prefer_contact {
+    margin: 20px 0 0 0 !important;
+    font-size: 14px !important;
+  }
+  .inputGroup textarea {
+    padding: 0.5em !important;
+  }
+  .container_contact_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub_container_contact_one {
+    width: 75% !important;
+    padding: 35px;
+  }
+  .sub_container_contact_one .subtitle {
+    font-size: 14px !important;
+  }
+  .sub_container_contact_one .text_info {
+    font-size: 12px !important;
+  }
+  .sub_one {
+    width: 60% !important;
+    margin: 0;
+  }
+  .sub_two {
+    margin: 0 !important;
+    margin-top: 120px !important;
+    width: 40%;
+  }
+  .container_social img {
+    width: 20px;
+  }
+  .sub_container_contact_two {
+    width: 100% !important;
+    aspect-ratio: 1.18;
+  }
+  .sub_container_contact_two .subtitle {
+    font-size: 15px !important;
+  }
+  .sub_container_contact_two .sub_three {
+    width: 90%;
+  }
+  .sub_container_contact_two .row_two {
+    margin-left: 130px !important;
+  }
+  .sub_container_contact_two .sub_map {
+    width: 90% !important;
+    aspect-ratio: 1.8 !important;
+  }
+  .logo_footer {
+    margin-left: 10px !important;
+  }
+  .sub_container_footer {
+    margin-left: 20px !important;
+  }
+  .sub_container_footer_two {
+    margin-top: -30px;
+    padding-right: 10px;
+  }
+  .sub_container_footer_two .title_footer {
+    font-size: 10px !important;
+  }
+  .sub_container_footer_two .sub_title_footer {
+    font-size: 6px !important;
+  }
+  .privacy {
+    margin-bottom: 2px !important;
+  }
+  .span_footer {
+    font-size: 6px !important;
+  }
+  .social_footer {
+    width: 90% !important;
+    padding-top: 5px !important;
+  }
+  .social_footer .img_social {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .container_footer_two .span_footer {
+    font-size: 4px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

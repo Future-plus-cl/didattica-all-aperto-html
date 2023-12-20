@@ -277,49 +277,66 @@
                         Ogni scuola merita di essere unica ed originale. Progettare intere aree didattiche è il nostro lavoro da più di vent'anni, fornendo soluzioni perfette per ogni esigenza. Hai un'idea da realizzare? Parliamone!
                     </p>
                 </div>
-                <div class="container_input">
-                    <div class="input">
-                        <div class="inputGroup">
-                            <input autocomplete="off" required="" type="text" id="name">
-                            <label for="name">NOME E COGNOME</label>
+<!-- 
+                <?php
+                    require './mailer/mailsender.php';
+
+                    if (isset ($_POST ['send']) ) {
+                        $res = send_mail ($_POST ['email'], "Questo è un tutorial", $_POST['text']);
+                        if ($res) {
+                            echo "<div class=\"alert alert-success\">Mail inviata !</div>";
+                        }else{
+                            echo "<div class=\"alert alert-danger\">Errore durante l'invio della mail !</div>";
+                        }
+                    }
+                ?> -->
+                <form action="post" class="form">
+          
+                    <div class="container_input">
+                        <div class="input">
+                            <div class="inputGroup">
+                                <input autocomplete="off" required="" type="text" id="name" name="name">
+                                <label for="name">NOME E COGNOME</label>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="inputGroup">
+                                <input autocomplete="off" required="" type="text" id="telephone" name="telephone">
+                                <label for="telephone">TELEFONO</label>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="inputGroup">
+                                <input autocomplete="off" required="" type="text" id="email" name="email">
+                                <label for="email">EMAIL</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="input">
-                        <div class="inputGroup">
-                            <input autocomplete="off" required="" type="text" id="telephone">
-                            <label for="telephone">TELEFONO</label>
+                    <div class="type_contact">
+                        <div class="text_contact">
+                            <span>Come preferisci essere contattato?</span>
+                        </div>
+                        <div class="container_input_radio">
+                            <span><input type="radio" class="input_radio" name="contact">Email </span>
+                            <span><input type="radio" class="input_radio" name="contact">Telefono</span>
                         </div>
                     </div>
-                    <div class="input">
-                        <div class="inputGroup">
-                            <input autocomplete="off" required="" type="text" id="email">
-                            <label for="email">EMAIL</label>
+                    <div class="accept_conditions">
+                        <div class="checkbox-wrapper-23">
+                            <input type="checkbox" id="check-23">
+                            <label for="check-23" style="--size: 30px">
+                                <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                            </label>
                         </div>
+                        <span class="text_accept">Ho letto e accetto la politica sulla privacy ai sensi del Regolamento EU n. 679/2016</span>
                     </div>
-                </div>
-                <div class="type_contact">
-                    <div class="text_contact">
-                        <span>Come preferisci essere contattato?</span>
-                    </div>
-                    <div class="container_input_radio">
-                        <span><input type="radio" class="input_radio">Email </span>
-                        <span><input type="radio" class="input_radio">Telefono</span>
-                    </div>
-                </div>
-                <div class="accept_conditions">
-                    <div class="checkbox-wrapper-23">
-                        <input type="checkbox" id="check-23">
-                        <label for="check-23" style="--size: 30px">
-                            <svg viewBox="0,0,50,50">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                            </svg>
-                        </label>
-                    </div>
-                    <span class="text_accept">Ho letto e accetto la politica sulla privacy ai sensi del Regolamento EU n. 679/2016</span>
-                </div>
-                <button class="send">
-                    invia
-                </button>
+                    <button class="send">
+                        invia
+                    </button>
+                          
+                </form>
         
                 <div class="title_info title_contact_principal">
                     Contattaci
@@ -347,7 +364,7 @@
                                     <label for="email_two" class="label_contact">EMAIL</label>
                                 </div>
                             </div>
-                            <div class="type_contact type_contact_one prefer_contact">
+                            <div class="prefer_contact">
                                 <span class="text_contact_two">Come preferisci essere contattato?</span>
                                 <div class="container_input_radio container_input_radio_two">
                                     <span><input type="radio" class="input_radio">Email </span>

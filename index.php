@@ -277,19 +277,23 @@
                         Ogni scuola merita di essere unica ed originale. Progettare intere aree didattiche è il nostro lavoro da più di vent'anni, fornendo soluzioni perfette per ogni esigenza. Hai un'idea da realizzare? Parliamone!
                     </p>
                 </div>
-<!-- 
                 <?php
                     require './mailer/mailsender.php';
 
                     if (isset ($_POST ['send']) ) {
-                        $res = send_mail ($_POST ['email'], "Questo è un tutorial", $_POST['text']);
+                        $res = send_mail (
+                            $_POST ['name'], 
+                            $_POST ['telephone'], 
+                            $_POST ['email'],
+                            $_POST ['contact'],
+                        );
                         if ($res) {
-                            echo "<div class=\"alert alert-success\">Mail inviata !</div>";
+                            echo "<div class=\"alert alert-success\">Mail inviata!</div>";
                         }else{
-                            echo "<div class=\"alert alert-danger\">Errore durante l'invio della mail !</div>";
+                            echo "<div class=\"alert alert-danger\">Errore durante l'invio della mail!</div>";
                         }
                     }
-                ?> -->
+                ?>
                 <form action="post" class="form">
           
                     <div class="container_input">
@@ -317,8 +321,8 @@
                             <span>Come preferisci essere contattato?</span>
                         </div>
                         <div class="container_input_radio">
-                            <span><input type="radio" class="input_radio" name="contact">Email </span>
-                            <span><input type="radio" class="input_radio" name="contact">Telefono</span>
+                            <span><input type="radio" class="input_radio" name="contact" value="email">Email</span>
+                            <span><input type="radio" class="input_radio" name="contact" value="telephone">Telefono</span>
                         </div>
                     </div>
                     <div class="accept_conditions">

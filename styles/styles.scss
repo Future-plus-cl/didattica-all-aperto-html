@@ -1180,6 +1180,12 @@ body{
 
 //************** Media Query ****************/
 
+
+//Media Query - 1280px
+@media (max-width: 1280px) {
+    
+}
+
 //Media Query - 1024px
 
 @media (max-width: 1024px) {
@@ -2164,6 +2170,9 @@ body{
         }
     }
 }
+
+
+//Media Query - 480px
 
 @media (max-width: 414px) {
     .title{

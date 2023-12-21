@@ -1,4 +1,4 @@
-const sectionOne = `<section class="section_one">
+const sectionOne = `<section class="container section_one">
 <div class="container_one">
     <img src="images/logo2.jpeg" alt="" class="logo">
     <img src="images/title.png" alt="" class="title">

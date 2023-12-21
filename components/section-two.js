@@ -1,4 +1,4 @@
-const sectionTwo = `<section class="section_two">
+const sectionTwo = `<section class="container section_two">
 <div class="content">
     <div class="presentation">
         <div class="title_presentation">

@@ -48,6 +48,11 @@ body{
     background: #04541F;
 }
 
+.app{
+    overflow: hidden;
+    margin: auto;
+}
+
 .container{
     width: 100%;
     margin: auto;
@@ -66,9 +71,10 @@ body{
     background-size: cover;
     text-transform: uppercase;
     color: $color-white;
-    margin-inline: -25px;
-    padding-bottom: 185px;
+    padding-bottom: 305px;
+    margin: auto;
     
+
     overflow: hidden;
     .container_one{
         padding-top: 50px;
@@ -114,8 +120,8 @@ body{
         position: absolute;
         width: 105%;
         margin-bottom: 50px;
-        top:1000px;
-        box-shadow: 0 32px 0 $bg-dark-green;
+        top:980px;
+        box-shadow: 0 152px 0 $bg-dark-green;
     }
 
     
@@ -129,7 +135,7 @@ body{
         text-transform: uppercase;
 
         position: absolute;
-        top: 1450px;
+        top: 1350px;
         left: -60px;
 
         color: $color-dark-green;
@@ -163,7 +169,6 @@ body{
 
 .section_two{
     overflow: hidden;
-    padding-top: 350px;
 }
 
 .content{
@@ -1183,15 +1188,98 @@ body{
 
 //Media Query - 1280px
 @media (max-width: 1280px) {
+    .section_one{
+        padding-bottom: 360px !important;
+    }
+
+    .triangle_one{
+        top: 975px !important;
+        box-shadow: 0 140px 0 $bg-dark-green !important;
+        margin-bottom: -10px !important;
+    }
+
+    .brand{
+        font-size: 28px !important;
+        width: 230% !important;
+        top: 1420px !important;
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(60%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .container_card{
+        gap: 40px;
+        .card{
+            margin: 0px 0px 0px 0px; 
+        }
+    }
+
+    .part_section_one{
+        aspect-ratio: 1.38;
+    }
+
+    .sub_title{
+        right: 35px !important;
+        bottom: -20px !important;
+        font-size: 35px !important;
+    }
+
+    .eclipse{
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .eclipse1{
+        top: 550px !important;
+        left: 120px !important;
+    }
+
+
+    .eclipse2{
+        top: 640px !important;
+        left: 600px !important;
+    }
+
+    .eclipse3{
+        top: 170px !important;
+        left: 250px !important;
+    }
+
+    .eclipse4{
+        top: 120px !important;
+        left: 540px !important;
+    }
+
+    .eclipse5{
+        top: 250px !important;
+        left: 550px !important;
+    }
+
+    .five_sub_title{
+        bottom: 20px !important;
+    }
+
+    .title_info{
+        padding: 0!important;;
+    }
+
+    .description_info{
+        padding-left: 20px!important;;
+    }
     
 }
 
 //Media Query - 1024px
-
 @media (max-width: 1024px) {
 
-    .container_one{
-        padding-bottom: 100px;
+    .section_one{
+        padding-bottom: 300px!important;
     }
 
     .logo{
@@ -1211,7 +1299,7 @@ body{
 
     .triangle_one{
         top: 1075px !important;
-        box-shadow: 0 80px 0 $bg-dark-green !important;
+        box-shadow: 0 150px 0 $bg-dark-green !important;
         margin-bottom: -10px !important;
     }
 
@@ -1331,34 +1419,30 @@ body{
     .eclipse{
         width: 20px !important;
         height: 20px !important;
+    }
+
+    .eclipse1{
         top: 460px !important;
         left: 120px !important;
     }
 
+
     .eclipse2{
-        width: 20px !important;
-        height: 20px !important;
         top: 550px !important;
         left: 560px !important;
     }
 
     .eclipse3{
-        width: 20px !important;
-        height: 20px !important;
         top: 150px !important;
         left: 210px !important;
     }
 
     .eclipse4{
-        width: 20px !important;
-        height: 20px !important;
         top: 120px !important;
         left: 430px !important;
     }
 
     .eclipse5{
-        width: 20px !important;
-        height: 20px !important;
         top: 250px !important;
         left: 480px !important;
     }
@@ -1424,21 +1508,35 @@ body{
 }
 
 //Media Query - 864px
-
 @media (max-width: 864px) {
+    .section_one{
+        padding-bottom: 270px!important;
+    }
 
     .title{
         padding-top: 90px !important;
         width: 100% !important;
     }
 
-    .sub_title_jumbo{
-        font-size: 30px !important;
+    .sub_container_jumbo{
+        padding-top: 50px !important;
+
+        .img_child{
+            width: 450px !important;
+        }
+    
+        .sub_title_jumbo{
+            font-size: 30px !important;
+        }
+    }
+
+    .triangle_one{
+        top: 820px!important;
     }
 
     .brand{
         width: 295% !important;
-        top: 1420px !important;
+        top: 1180px !important;
         font-size:22px;
     }
 
@@ -1744,11 +1842,10 @@ body{
 }
 
 //Media Query - 480px
-
 @media (max-width: 480px) {
 
     .section_one{
-        padding-bottom: 50px !important;
+        padding-bottom: 140px !important;
     }
 
     .logo{
@@ -1762,28 +1859,29 @@ body{
 
     .sub_container_jumbo{
 
-        padding-top:55px !important;
+        padding-top:50px !important;
 
         .sub_title_jumbo{
             width: 38% !important;
             margin-right: -5px !important;
-            font-size: 20px !important;
+            font-size: 18px !important;
         }
     
         .img_child{
-            width: 200px !important;
+            width: 260px !important;
         }
     }
 
     .triangle_one{
-        top: 510px !important;
-        margin-left: 10px !important;
+        top: 570px !important;
+        box-shadow: 0 90px 0 $bg-dark-green !important;
+        margin-left: 0px !important;
     }
 
     .brand{
-        font-size:20px!important;
+        font-size:18px!important;
         width: 480% !important;
-        top: 820px !important;
+        top: 830px !important;
     }
 
     .brand_text{
@@ -1822,7 +1920,6 @@ body{
     }
     
     //PERCHE E IMPORTANTE PER I BAMBINI?
-
     .div_line{
         padding-bottom:50px !important;
         margin-bottom: 30px !important;
@@ -2171,19 +2268,15 @@ body{
     }
 }
 
-
-//Media Query - 480px
-
+//Media Query - 414px
 @media (max-width: 414px) {
     .title{
         padding-top: 90px !important;
         width: 100% !important;
     }
 
-    
-
     .container_one{
-        padding-bottom: 35px;
+        padding-bottom: 5px;
     }
 
     .sub_container_jumbo{
@@ -2197,13 +2290,14 @@ body{
     .triangle_one{
         position: absolute;
         width: 105%;
+        top: 560px !important;
         margin-bottom: 0px !important;
-        box-shadow: 0 60px 0 $bg-dark-green !important;
+        box-shadow: 0 78px 0 $bg-dark-green !important;
     }
 
     .brand{
         width: 485% !important;
-        top: 720px !important;
+        top: 780px !important;
         font-size:22px;
         letter-spacing: 12px!important;
     }

@@ -1,0 +1,1 @@
+const main = `<main> ${sectionOne} ${sectionTwo} ${sectionThree}</main>`

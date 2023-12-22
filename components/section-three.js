@@ -107,7 +107,13 @@ const sectionThree = `<section class="section_three">
                 </div>
                 <div class="input">
                     <div class="inputGroup">
-                        <input autocomplete="off" required="" type="text" id="email" name="email">
+                        <input 
+                            autocomplete="off" 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            required
+                        >
                         <label for="email">EMAIL</label>
                     </div>
                 </div>
